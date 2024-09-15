@@ -98,7 +98,7 @@ The fixed window counter algorithm has a major drawback: it allows more requests
 Assume the rate limiter allows a maximum of 100 requests per hour, and there are 84 requests in the previous hour and 36 requests in the current hour. For a new request that arrives at a 25% position in the current hour, the number of requests in the rolling window is calculated using the following formula:<br/>
 Requests in current window + (Requests in the previous window \* overlap percentage of the rolling window and previous window)
 
-<img src="./slidingwindowcounter.png" width="500" >
+<img src="slidingwindowcounter.png" width="500" >
 
 (36 + (84 \* 75%)) = 99
 
